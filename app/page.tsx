@@ -2,9 +2,10 @@ import { Header } from '@/components/header';
 // import { Footer } from '../components/footer';
 
 export default function Home() {
-  return (
+  // @ts-ignore
+    return (
       <section>
-        <Header name="Eric Kim"> </Header>
+        <Header name="Eric Kim"/>
       <p>Welcome to my portfolio </p>
           <a href={"https://www.linkedin.com/in/ericdwkim/"}>LinkedIn</a>
       </section>
