@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import avatar from '../public/avatar.jpg'
+import { motion } from 'framer-motion';
 export const Intro = () => {
 
     return (
