@@ -4,6 +4,7 @@ import React from 'react';
 import { SectionHeading } from './section-heading'
 
 export const About = () => {
+    // todo: learn about react hooks `useSectionInView`
     return (
         <><SectionHeading>About me</SectionHeading><p>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
