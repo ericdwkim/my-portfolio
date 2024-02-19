@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SectionHeading } from "@/components/section-heading";
-import { useSectionInView } from "@/lib/hooks"
+// import { useSectionInView } from "@/lib/hooks"
 export const About = () => {
     // todo: need better understanding of react hooks
     // const { ref } = useSectionInView('About', 0.75);
