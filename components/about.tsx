@@ -1,10 +1,12 @@
 'use client';
 
 import React from 'react';
-import { SectionHeading } from './section-heading'
-
+import { SectionHeading } from "@/components/section-heading";
+import { useSectionInView } from "@/lib/hooks"
 export const About = () => {
-    // todo: learn about react hooks `useSectionInView`
+    // todo: need better understanding of react hooks
+    // const { ref } = useSectionInView('About', 0.75);
+
     return (
         <><SectionHeading>About me</SectionHeading><p>
             {/* eslint-disable-next-line react/no-unescaped-entities */}
