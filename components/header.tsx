@@ -1,4 +1,5 @@
-export function Header({ name }: { name: { id: string }}) {
-    // @ts-ignore
-    return <h1>{name}</h1>
+export const Header = () => {
+    return (
+        <header>hello! im a header</header>
+    )
 }
