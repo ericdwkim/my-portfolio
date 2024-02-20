@@ -37,3 +37,6 @@ next-env.d.ts
 
 # IDE
 .idea/*
+
+# dev notes/scratches
+dev/hooks-notes-questions.txt
