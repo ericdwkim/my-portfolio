@@ -1,4 +1,4 @@
-# React Concepts/Notes
+## React Concepts/Notes
 useInView from react-intersection-observer hook is used to determine if an element is in the viewport; it returns an object containing `ref` (object) and `inView` (bool)
             `ref` --> a function to be applied to the DOM element you want to observe; an object containing a function?
             `inView` --> a boolean to indicate whether the observed elems are within the viewport based on the specified `threshold` value
@@ -12,7 +12,15 @@ useContext, createContext, context provider
 reducer
      - essentially a useEffect for more complicated situations; will circle back on this concept later
 
+useState
+    - this built-in react hook allows one to define a default state `useState(someDefaultState)` and monitor changes to the state or value `activeSection` ("Home", "About", etc... a string dtype) or `timeOfLastClick` (a number dtype) through its generated setter functions `setActiveSection` and `setTimeOfLastClick`.
+    
+```
+    const [activeSection, setActiveSection] = useState<SectionName>('Home');
+    const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
+```
 
 
-# TailWindCSS Concepts/Notes
+
+## TailWindCSS Concepts/Notes
 `dark` prefix for darkmode; `rem` is for "root element" unit size --> If the root element (<html>) has a font size of 16px (a common default), 1rem equals 16px. Therefore, 2rem would be 32px, 0.5rem would be 8px, etc.
