@@ -1,5 +1,5 @@
 ## React Concepts/Notes
-useInView from react-intersection-observer hook is used to determine if an element is in the viewport; it returns an object containing `ref` (object) and `inView` (bool)
+useInView from `react-intersection-observer` hook ; used to determine if an element is in the `viewport`; it returns an object containing `ref` (object) and `inView` (bool)
             `ref` --> a function to be applied to the DOM element you want to observe; an object containing a function?
             `inView` --> a boolean to indicate whether the observed elems are within the viewport based on the specified `threshold` value
 
@@ -20,6 +20,28 @@ useState
     const [timeOfLastClick, setTimeOfLastClick] = useState(0); // we need to keep track of this to disable the observer temporarily when user clicks on a link
 ```
 
+useEffect
+    - a built-in React hook used to monitor state or prop changes to induce appropriate changes, such as DOM changes or UI changes. 
+
+For example, in hooks.ts, it is used in the custom `useSectioninView` hook to update the `sectionName` prop (?) depending on which section is in the viewport. Intuitively, this makes sense bc/ we want users to be able to click on "About" section and for the UI to update accordingly and scroll automatically to that section. 
+
+```
+  useEffect(() => {
+    if (inView && Date.now() - timeOfLastClick > 1000) {
+      setActiveSection(sectionName);
+    }
+  }, [inView, setActiveSection, timeOfLastClick, sectionName]);
+
+```
+The syntax is essentially:
+
+```
+useEffect(() => {
+
+if (some conditional expression) is true ... {
+ //then execute this function or logic inside here}
+}, [depending on any dependencie listed in here which can be a bool, an int, a function, a prop])
+```
 
 
 ## TailWindCSS Concepts/Notes
