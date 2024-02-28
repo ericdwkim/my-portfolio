@@ -43,6 +43,10 @@ if (some conditional expression) is true ... {
 }, [depending on any dependencie listed in here which can be a bool, an int, a function, a prop])
 ```
 
+TODO - deep dive into
+1. theme-context.tsx --> useContext, useState
+2. creating a custom ContextProvider
+
 
 ## TailWindCSS Concepts/Notes
 `dark` prefix for darkmode; `rem` is for "root element" unit size --> If the root element (<html>) has a font size of 16px (a common default), 1rem equals 16px. Therefore, 2rem would be 32px, 0.5rem would be 8px, etc.
