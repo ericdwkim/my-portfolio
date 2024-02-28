@@ -45,7 +45,7 @@ if (some conditional expression) is true ... {
 
 TODO - deep dive into
 1. theme-context.tsx --> useContext, useState
-2. creating a custom ContextProvider
+2. creating a custom ContextProvider [readthedocs](https://legacy.reactjs.org/docs/context.html)
 
 
 ## TailWindCSS Concepts/Notes
