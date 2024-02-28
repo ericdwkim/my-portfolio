@@ -37,16 +37,13 @@ export const Header = () => {
                                     },
                                 )}
                                 href={link.hash}
-                                // TODO: understand how this onClick is working and using the setters to update state
                                 onClick={() => {
                                     setActiveSection(link.name);
                                     setTimeOfLastClick(Date.now());
                                 }}
                             >
                                 {link.name}
-                                {/* TODO: why is this extra link.name required?*/}
 
-                                {/* TODO: need to understand this motion.span section deeper */}
                                 {link.name === activeSection && (
                                     <motion.span
                                         className="bg-gray-100 rounded-full absolute inset-0 -z-10 dark:bg-gray-800"
