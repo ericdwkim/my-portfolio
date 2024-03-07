@@ -47,6 +47,12 @@ TODO - deep dive into
 1. theme-context.tsx --> useContext, useState
 2. creating a custom ContextProvider [readthedocs](https://legacy.reactjs.org/docs/context.html)
 
+useContext
+// Question/Confusion: how does simply returning `context` allow us to unpack both setters and `activeSection`?
+// useContext call retrieves the current context value; this `value` object is provided by the nearest `<ActiveSectionContext.Provider> above it in the component tree. This object contains both the `activeSection` state (ie: Home or About...) and the setter function `setActiveSection`
+// a simpler example is useTheme() ; this internally calls useContext with a custom ThemeContext passed in and fetches the `value` object from the nearest `<ThemeContext.Provider>`
+- component tree? 
+
 
 ## TailWindCSS Concepts/Notes
 `dark` prefix for darkmode; `rem` is for "root element" unit size --> If the root element (<html>) has a font size of 16px (a common default), 1rem equals 16px. Therefore, 2rem would be 32px, 0.5rem would be 8px, etc.
