@@ -23,17 +23,17 @@ export const Intro = () => {
             <div className="flex items-center justify-center">
                 <div className="relative">
                     <motion.div
-                        // initial={{opacity: 0, scale: 0}}
-                        animate={{
-                            scale: [1, 2, 2, 1, 1],
-                            rotate: [0, 0, 270, 270, 0],
-                            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-                        }}
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
                         transition={{
-                            ease: "linear",
                             duration: 2,
-                            // type: 'tween',
-                            // duration: 0.2,
+                            ease: [0, 0.71, 0.2, 1.01],
+                            scale: {
+                                type: "spring",
+                                damping: 5,
+                                stiffness: 100,
+                                restDelta: 0.001
+                            }
                         }}
                     >
                         <Image
