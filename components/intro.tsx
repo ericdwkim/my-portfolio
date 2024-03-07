@@ -15,37 +15,45 @@ export const Intro = () => {
 
 
     return (
-    <section
-        ref={ref}
-        id="home"
-        className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
-    >
-    <div>
-        <><Image
-            src={avatar}
-            alt="Eric portrait"
-            width="192"
-            height="192"
-            quality="95"
-            priority={true}
-            className="h-24 w-24 rounded-full object-cover"/>
+        <section
+            ref={ref}
+            id="home"
+            className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+        >
+            <div className="flex items-center justify-center">
+                <div className="relative">
+                    <motion.div
+                        // initial={{opacity: 0, scale: 0}}
+                        animate={{
+                            scale: [1, 2, 2, 1, 1],
+                            rotate: [0, 0, 270, 270, 0],
+                            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
+                        }}
+                        transition={{
+                            ease: "linear",
+                            duration: 2,
+                            // type: 'tween',
+                            // duration: 0.2,
+                        }}
+                    >
+                        <Image
+                            src={avatar}
+                            alt="Eric portrait"
+                            width="192"
+                            height="192"
+                            quality="95"
+                            priority={true}
+                            className="h-24 w-24 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                        />
 
+                    </motion.div>
 
-            <motion.h1
-                className="mb-10 mt-4 px-4 text-2 font-medium !leading-[1.5] sm:text-4xl"
-                initial={{opacity: 0, y: 100}}
-                animate={{opacity: 1, y: 0}}
-            >
-                {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Howdy! I'm <span className="font-bold">Eric</span>, a
-                developer / data analyst.
-                My specialty is web-scraping and building automation bots with
-                <span className="font-bold"> Python and Selenium</span>.
-                Scroll down to follow my journey
-            </motion.h1>
-        </>
-    </div>
-    </section>
+                    {/*<motion.h1*/}
+                    {/*    className="mb-10 mt-4 px-4 text-2 font-medium !leading-[1.5] sm:text-4xl"*/}
+                    {/*    initial=*/}
 
+                </div>
+            </div>
+        </section>
     );
-};
+}
