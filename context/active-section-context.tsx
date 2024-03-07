@@ -47,5 +47,4 @@ export function useActiveSectionContext() {
     }
 
     return context;
-    // todo: how does simply returning `context` allow us to unpack both setters and `activeSection`?
 }
