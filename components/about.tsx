@@ -1,20 +1,28 @@
+/* eslint-disable */
 'use client';
 
 import React from 'react';
 import { SectionHeading } from "@/components/section-heading";
-// import { useSectionInView } from "@/lib/hooks"
+import { motion } from 'framer-motion';
+import { useSectionInView } from "@/lib/hooks";
 export const About = () => {
-    // todo: need better understanding of react hooks
-    // const { ref } = useSectionInView('About', 0.75);
+    const { ref } = useSectionInView('About');
 
     return (
-        <><SectionHeading>About me</SectionHeading><p>
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm a developer / data analyst based in Texas with strong interests in distributed systems, such as Web3, AI, ML, and cloud infrastructure.
-            Outside of work, you can find me scaling mountains, training Brazilian jiu-jitsu, tinkering with side projects, or
-            fully immersed in a book. I consider myself a student of life and refuse to stop learning.
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            I'm currently learning TypesScript, React, and TailwindCSS (you're looking at it!). I also am an avid chess player, so click [here] if you want to play a game with me!
-        </p></>
+        <motion.section
+            ref={ref}
+            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.175 }}
+            id="about"
+        >
+            <SectionHeading>About me</SectionHeading><p>
+
+            Howdy! 👋 I'm a data analyst turned developer based in Texas with strong interests in distributed systems and decentralization.
+            Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
+            immersed in a book 📖. I'm also avid chess player, so click ♟️ if you'd like to play a game.
+            I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!
+        </p></motion.section>
     )
 }
