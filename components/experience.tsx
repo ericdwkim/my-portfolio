@@ -41,8 +41,9 @@ export const Experience = () => {
                     fontSize: '1.5rem',
                 }}
                 >
-                <h3 className="font-semibold text-lg capitalize">{item.title} | <h4
-                    className="font-semibold text-lg inline italic">{item.company}</h4>
+                <h3 className="font-semibold text-lg capitalize">
+                    <span>{item.title}</span> |
+                    <span className="font-semibold text-lg inline italic"> {item.company}</span>
                 </h3>
 
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
