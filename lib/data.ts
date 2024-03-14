@@ -38,36 +38,49 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: 'Data Analyst | Aramark',
+        title: 'Data Analyst',
+        company: 'Aramark',
         description:
         'Aramark is an American food and facilities services provider across diverse sectors with international operations. ENABLE+ is a set of iOS/Android apps designed to streamline food servicing and inventory management. Prima Web is a web app designed to manage menu items, recipes, and food waste tracking.',
         icon: React.createElement(BsPersonWorkspace),
         date: 'Feb 2022 - Present'
     },
     {
-        title: 'Developer / Data Analyst | TXB Stores',
+        title: 'AKS Support Engineer',
+        company: 'Microsoft',
         description:
-        'placeholder description',
+        'Azure Kubernetes Service (AKS) is a managed Kubernetes service in Azure to simplify container orchestration and management for cluster deployments and maintenance. Gained experience in troubleshooting and optimizing AKS clusters, ensuring secure and efficient container orchestration and management principles to minimize downtime.',
+        icon: React.createElement(BsPersonWorkspace),
+        date: 'Dec 2022 - Feb 2022'
+    },
+    {
+        title: 'Developer / Data Analyst',
+        company: 'TXB Stores',
+        description:
+        'TXB is a chain of convenience stores and gas stations with more than 48 locations operating in Texas and Oklahoma. I spearheaded the development and maintenance of an automation suite using Python, Selenium, and bash scripts. On a weekly basis, I was responsible for creating interactive KPI reports to incite business actions. Analyzing the data to help identify and pinpoint key business drivers was my speciality.',
         icon: React.createElement(BsPersonWorkspace),
         date: 'Dec 2021 - Feb 2022'
     },
     {
-        title: 'Jr. Software Engineer / Technical Analyst | Fruitful Labs',
+        title: 'Jr. Software Engineer',
+        company: 'Fruitful Labs',
         description:
-        'placeholder description',
+        'Fruitful Labs is a blockchain startup recognized for deploying LoveBoatExchange, a decentralized cryptocurrency exchange platform deployed to Ethereum and Polygon chains. I helped co-author a collection of smart contracts using Solidity and Hardhat to develop an ERC20 governance token. On deployment, LoveBoatExchange had an initial total liquidity of $250,000 on the Polygon network. ',
         icon: React.createElement(BsPersonWorkspace),
         date: 'Dec 2020 - Sept 2021'
     },
     {
-        title: 'Student | Backend, SQL, and DevOps with Python | NuCamp',
-        description: 'placeholder',
+        title: 'Backend, SQL & DevOps',
+        company: 'NuCamp',
+        description: 'Completed a rigorous 4-month bootcamp designed for backend developers using Python and SQL. Learned about data structures and algorithms and fundamental OOP concepts, and basic design principles.',
         icon: React.createElement(LuGraduationCap),
         date: 'Aug 2021 - Dec 2021'
     },
     {
-        title: 'Bachelors of Science | Temple University | Philadelphia, PA',
+        title: 'Bachelors of Science',
+        company: 'Temple University',
         description:
-        'Kinesiology major with a minor in Neuroscience Research',
+        'Obtained a 4 year Bachelors degree majoring in Kinesiology and a minor in Neuroscience Research. Gained paid working experience in a research lab and even co-authored a publication for the European Journal of Neuroscience!',
         icon: React.createElement(LuGraduationCap),
         date: 'Dec 2016 - Dec 2020'
     },
