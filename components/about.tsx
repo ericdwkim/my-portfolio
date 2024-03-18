@@ -19,7 +19,7 @@ export const About = () => {
         >
             <SectionHeading>About me</SectionHeading><p>
 
-            Howdy! 👋 I'm a data analyst turned developer based in Texas with strong interests in distributed systems and decentralization.
+            Howdy! 👋 I'm a data analyst / developer based in Texas with strong interests in distributed systems and decentralization.
             Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
             immersed in a book 📖. I'm also avid chess player, so click ♟️ if you'd like to play a game.
             I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!

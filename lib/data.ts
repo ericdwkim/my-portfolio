@@ -41,7 +41,7 @@ export const experiencesData = [
         title: 'Data Analyst',
         company: 'Aramark',
         description:
-        'Aramark is an American food and facilities services provider across diverse sectors with international operations. ENABLE+ is a set of iOS/Android apps designed to streamline food servicing and inventory management. Prima Web is a web app designed to manage menu items, recipes, and food waste tracking.',
+        'Aramark is an American food and facilities services provider with international operations. ENABLE+ is a set of iOS/Android apps designed to streamline food servicing and inventory management. As part of the ENABLE team, I am the core contributor and maintainer of our stored procedures hosted on SQL Servers. This includes the implementation and data validation phases to reflect any new API updates for a timely production release. ',
         icon: React.createElement(BsPersonWorkspace),
         date: 'Feb 2022 - Present'
     },
