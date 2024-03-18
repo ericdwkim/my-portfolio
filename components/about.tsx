@@ -17,12 +17,16 @@ export const About = () => {
             transition={{ delay: 0.175 }}
             id="about"
         >
-            <SectionHeading>About me</SectionHeading><p>
+            <SectionHeading>About me</SectionHeading>
 
-            Howdy! 👋 I'm a data analyst / developer based in Texas with strong interests in distributed systems and decentralization.
-            Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
-            immersed in a book 📖. I'm also avid chess player, so click ♟️ if you'd like to play a game.
-            I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!
-        </p></motion.section>
+            <p>
+                I'm a data analyst and developer based in Texas with strong interests in distributed systems and decentralization.
+                Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
+                immersed in a book 📖. I'm also avid chess player, so click ♟️ if you'd like to play a game.
+                I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!
+            </p>
+            <br />
+
+        </motion.section>
     )
 }
