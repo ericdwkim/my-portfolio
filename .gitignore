@@ -40,3 +40,6 @@ next-env.d.ts
 
 # dev directory
 dev/
+
+# ci/cd
+qodana.yaml
