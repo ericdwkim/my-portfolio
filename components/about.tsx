@@ -2,7 +2,7 @@
 'use client';
 
 import React from 'react';
-import { SectionHeading } from "@/components/section-heading";
+import { SectionHeading } from './section-heading'
 import { motion } from 'framer-motion';
 import { useSectionInView } from "@/lib/hooks";
 export const About = () => {
