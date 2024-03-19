@@ -85,3 +85,20 @@ export const experiencesData = [
         date: 'Dec 2016 - Dec 2020'
     },
 ] as const;
+
+export const skillsData = [
+    'Python',
+    'SQL',
+    'Java',
+    'Kafka',
+    'Git',
+    'Selenium',
+    'Pandas',
+    'NumPy',
+    'HTML',
+    'CSS',
+    'TypeScript',
+    'JavaScript',
+    'Docker',
+    'Kubernetes'
+] as const;
