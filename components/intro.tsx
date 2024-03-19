@@ -55,25 +55,26 @@ export const Intro = () => {
             </div>
 
             <motion.h1
-                className="mb-10 mt-4 px-4 text-2 font-medium !leading-[1.5] sm:text-4xl"
-                initial={{opacity: 0, y: 100}}
-                animate={{opacity: 1, y: 0}}
+                className="mb-10 mt-4 px-4 text-2 font-medium !leading-[1.5] sm:text-2xl"
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
             >
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Howdy! 👋 I'm <span className="font-bold">Eric,</span> an aspiring full-stack architect working as a data
+                Howdy! 👋🏼 I'm <span className="font-bold">Eric,</span> an aspiring full-stack architect working as a data
                 analyst and developer. My specialty is data engineering using
                 <span className="font-bold"> Python, SQL, and Bash. </span> I am always eager to explore unfamiliar,
                 challenging domains and have an insatiable appetite to learn!
                 <br/>
                 <br/>
-                ↓ Curious about my journey? ↓
+                ⬇️ Curious about my journey? ⬇️
+
 
             </motion.h1>
 
             <motion.div
                 className="flex flex-col items-center justify-center gap-2 px-4 text-lg"
-                initial={{opacity: 0, y: 100}}
-                animate={{opacity: 1, y: 0}}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{
                     delay: 0.1,
                 }}
