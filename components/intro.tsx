@@ -11,7 +11,6 @@ import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import avatar from '../public/avatar.jpg';
 import { useTheme } from '@/context/theme-context';
-import GitHubCalendar from "react-github-calendar";
 
 export const Intro = () => {
     const { ref } = useSectionInView('Home', 0.5)
@@ -125,9 +124,7 @@ export const Intro = () => {
                         </a>
                     </button>
                 </div>
-                <GitHubCalendar
-                    username="ericdwkim"
-                />
+
             </motion.div>
         </section>
     );

@@ -5,6 +5,7 @@ import { SectionHeading } from './section-heading';
 import { skillsData } from '@/lib/data';
 import {useSectionInView } from "@/lib/hooks";
 import { motion } from 'framer-motion';
+import GitHubCalendar from "react-github-calendar";
 
 const fadeInAnimationVariants = {
     initial: {
@@ -47,6 +48,16 @@ export const Skills = () => {
                  </motion.li>
                 ))}
             </ul>
+            <li/>
+            <motion.section
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5}}
+            >
+                <GitHubCalendar
+                    username="ericdwkim"
+                />
+            </motion.section>
         </section>
     );
 };
