@@ -4,9 +4,8 @@ import Image from 'next/image';
 import React from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
+import { BsArrowRight } from 'react-icons/bs';
 import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
 import avatar from '../public/avatar.jpg';
@@ -79,52 +78,32 @@ export const Intro = () => {
                     delay: 0.1,
                 }}
             >
-                <button>
-                    <Link
-                        href="#contact"
-                        className={`group bg-gray-900 text-white px-7 py-3 mb-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
-              dark:border dark:border-1 dark:border-white/10`}
-                        onClick={() => {
-                            setActiveSection('Contact');
-                            setTimeOfLastClick(Date.now());
-                        }}
-                    >
-                        Contact me here{' '}
-                        <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
-                    </Link>
-                </button>
-        <button>
-          <a
-            className="flex items-center my-1.5 px-7 py-3 group bg-white  gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-            href="/KimEric_Resume.pdf"
-            download
-          >
-            Download Resume{' '}
-            <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
-          </a>
-        </button>
-                <div className="flex items-center content-center self-center space-x-2">
+                <div>
                     <button>
-                        <a href="https://linkedin.com/in/ericdwkim" target="_blank">
-                            <div
-                                className="flex flex-row items-center w-fit bg-white p-4 text-gray-700 hover:text-gray-950 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60">
-                                <span>LinkedIn</span>{' '}
-                                <BsLinkedin className="hidden sm:block ml-1"/>
-                            </div>
+                        <a
+                            className="flex items-center my-1.5 px-7 py-3 group bg-white  gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+                            href="/KimEric_Resume.pdf"
+                            download
+                        >
+                            Download Resume{' '}
+                            <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
                         </a>
                     </button>
-
                     <button>
-                        <a href="https://github.com/ericdwkim" target="_blank">
-                            <div
-                                className="flex flex-row items-center w-fit bg-white p-4 text-gray-700 hover:text-gray-950 gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60">
-                                <span>GitHub</span>
-                                <FaGithubSquare className="hidden sm:block"/>
-                            </div>
-                        </a>
+                        <Link
+                            href="#contact"
+                            className={`group bg-gray-900 text-white px-7 py-3 mb-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
+              dark:border dark:border-1 dark:border-white/10`}
+                            onClick={() => {
+                                setActiveSection('Contact');
+                                setTimeOfLastClick(Date.now());
+                            }}
+                        >
+                            Contact me here{' '}
+                            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
+                        </Link>
                     </button>
                 </div>
-
             </motion.div>
         </section>
     );
