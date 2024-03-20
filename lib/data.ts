@@ -36,6 +36,50 @@ export const links = [
 
 ] as const;
 
+export const projectsData = [
+    {
+        title:'DTN Bot',
+        description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away accounting documents.',
+        tags: ['Python', 'Selenium', 'Shell'],
+        github: 'https://github.com/ericdwkim/dtn-bot'
+    },
+
+    {
+        title: 'Door Dash Bot',
+        description: 'A web-scraping automation bot built for TXB Stores to extract a filtered set of Door Dash delivery orders into a CSV.',
+        tags: ['Python', 'Selenium', 'Shell'],
+        github: 'https://github.com/ericdwkim/door_dash_bot'
+    },
+
+    {
+        title: 'MS Team Auto Joiner',
+        description: 'An automation bot to automatically join Microsoft Teams meetings appearing on your calendar.',
+        tags: ['Python', 'Selenium', 'Shell'],
+        github: 'https://github.com/ericdwkim/ms-team-auto-joiner'
+   },
+
+    {
+        title: 'Cash Depot Bot',
+        description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away CSVs into a shared network filesystem.',
+        tags: ['Java', 'Selenium', 'Shell', 'Gradle', 'shadowJar'],
+        github: 'https://github.com/ericdwkim/cash-depot-bot'
+    },
+
+    {
+        title: 'Personal Portfolio',
+        description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn NextJS, TailWindCSS, and React fundamentals',
+        tags: ['TypeScript', 'NextJS', 'TailWindCSS'],
+        github: 'https://github.com/ericdwkim/my-portfolio'
+    },
+
+    {
+        title: 'SpotifyMe',
+        description: 'A Spotify client clone built as my capstone project at NuCamp.',
+        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'Docker'],
+        github: 'https://github.com/ericdwkim/SpotifyMe',
+    }
+]
+
 export const experiencesData = [
     {
         title: 'Data Analyst',
@@ -99,6 +143,7 @@ export const skillsData = [
     'CSS',
     'TypeScript',
     'JavaScript',
+    'React',
     'Docker',
     'Kubernetes'
 ] as const;
