@@ -3,8 +3,8 @@ import { ActiveSectionContextProvider } from "@/context/active-section-context";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeSwitch } from '@/components/theme-switch';  // the light/dark mode toggle button component
-import { ThemeContextProvider } from '@/context/theme-context'; // context provider function `useTheme()` that returns ThemeContext.Provider
+import { ThemeSwitch } from '@/components/theme-switch';
+import { ThemeContextProvider } from '@/context/theme-context';
 
 
 const inter = Inter({ subsets: ["latin"] });
