@@ -3,7 +3,7 @@ import { ActiveSectionContextProvider } from "@/context/active-section-context";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { ThemeSwitch } from '@/components/theme-switch';
+// import { ThemeSwitch } from '@/components/theme-switch';
 import { ThemeContextProvider } from '@/context/theme-context';
 
 
@@ -31,7 +31,7 @@ export default function RootLayout({
           <ActiveSectionContextProvider>
               <Header/>
               {children}
-              <ThemeSwitch/>
+              {/*<ThemeSwitch/>*/}
           </ActiveSectionContextProvider>
       </ThemeContextProvider>
       </body>
