@@ -61,7 +61,7 @@ export const projectsData = [
     {
         title: 'Cash Depot Bot',
         description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away CSVs into a shared network filesystem.',
-        tags: ['Java', 'Selenium', 'Shell', 'Gradle', 'shadowJar'],
+        tags: ['Java', 'Selenium', 'Shell', 'Gradle', 'ShadowJar'],
         github: 'https://github.com/ericdwkim/cash-depot-bot'
     },
 
