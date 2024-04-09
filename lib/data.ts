@@ -67,15 +67,15 @@ export const projectsData = [
 
     {
         title: 'Personal Portfolio',
-        description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn NextJS, TailWindCSS, and React fundamentals',
-        tags: ['TypeScript', 'NextJS', 'TailWindCSS'],
+        description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn frontend development concepts.',
+        tags: ['TypeScript', 'NextJS', 'TailWindCSS', 'ReactJS'],
         github: 'https://github.com/ericdwkim/my-portfolio'
     },
 
     {
         title: 'SpotifyMe',
         description: 'A Spotify client clone built as my capstone project at NuCamp.',
-        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'Docker'],
+        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'PyTest','Docker'],
         github: 'https://github.com/ericdwkim/SpotifyMe',
     }
 ]
