@@ -1,7 +1,9 @@
 import React from 'react';
 import botImage from '@/public/botImage.png';
-import spotify_logo from '@/public/spotify_logo.png'
-import my_portfolio_image from '@/public/my_portfolio_image.png';
+import spotifyLogo from '@/public/spotifyLogo.png';
+import myPortfolioImage from '@/public/myPortfolioImage.png';
+import doordashLogo from '@/public/doordashLogo.png';
+import msTeamLogo from '@/public/msTeamLogo.png';
 // import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap} from "react-icons/lu";
 // import { FaReact } from 'react-icons/fa';
@@ -49,7 +51,7 @@ export const projectsData = [
         description: 'A web-scraping automation bot built for TXB Stores to extract a filtered set of Door Dash delivery orders into a CSV.',
         tags: ['Python', 'Selenium', 'Shell'],
         github: 'https://github.com/ericdwkim/door_dash_bot',
-        imageUrl: botImage,
+        imageUrl: doordashLogo,
     },
 
     {
@@ -57,7 +59,7 @@ export const projectsData = [
         description: 'An automation bot to automatically join Microsoft Teams meetings appearing on your calendar.',
         tags: ['Python', 'Selenium', 'Shell'],
         github: 'https://github.com/ericdwkim/ms-team-auto-joiner',
-        imageUrl: botImage,
+        imageUrl: msTeamLogo,
     },
 
     {
@@ -73,7 +75,7 @@ export const projectsData = [
         description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn frontend development concepts.',
         tags: ['TypeScript', 'NextJS', 'TailWindCSS', 'ReactJS'],
         github: 'https://github.com/ericdwkim/my-portfolio',
-        imageUrl: my_portfolio_image,
+        imageUrl: myPortfolioImage,
     },
 
     {
@@ -81,7 +83,7 @@ export const projectsData = [
         description: 'A Spotify client clone built as my capstone project at NuCamp.',
         tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'PyTest','Docker'],
         github: 'https://github.com/ericdwkim/SpotifyMe',
-        imageUrl: spotify_logo,
+        imageUrl: spotifyLogo,
     }
 ]
 
