@@ -24,7 +24,7 @@ export const Project = ({
             className="group mb-3 sm:mb-8 last:mb-0"
         >
             <section className="bg-gray-100 max-w-[44rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative h-fit hover:bg-gray-200 transition sm:group-even:pl-8 dark:text-white dark:bg-white/10 dark:hover:bg-white/20">
-                <div>
+                <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
                     <Link href={github} target="_">
                         <h3 className="text-2xl font-semibold">{title}</h3>
                     </Link>
@@ -40,7 +40,7 @@ export const Project = ({
                         <span className="font-bold underline">Description</span>{' '}
                         {description}
                     </p>
-
+                    <br/>
                     <div>
                         <a href={github} target="_">
                             <ProjectBtn/>
