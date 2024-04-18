@@ -2,7 +2,8 @@
 
 import { useRef } from 'react';
 import { projectsData } from "@/lib/data";
-import { motion, useScroll, useTransform } from "framer-motion";
+import Image from 'next/image';
+import { motion } from "framer-motion";
 import Link from 'next/link';
 import { ProjectBtn } from './project-btn';
 
@@ -12,7 +13,8 @@ export const Project = ({
     title,
     description,
     github,
-    tags
+    tags,
+    imageUrl
 }: ProjectProps) => {
     const ref = useRef<HTMLDivElement>(null)
     const { scrollYProgress } = useScroll({
@@ -30,6 +32,14 @@ export const Project = ({
                     <Link href={github} target="_">
                         <h3 className="text-2xl font-semibold">{title}</h3>
                     </Link>
+                    <Image
+                    src={imageUrl}
+                    alt="Project image"
+                    quality={95}
+                    loading="lazy"
+                    className="block sm:hidden top-8 -right-40 w-[28.25rem] my-2 rounded"
+                    />
+
                     <p>
                         <span className="font-bold underline">Description</span>{' '}
                         {description}
@@ -52,6 +62,25 @@ export const Project = ({
                     </ul>
 
                 </div>
+
+                <Image
+                    src={imageUrl}
+                    alt="Project I worked on"
+                    quality={95}
+                    loading="lazy"
+                    className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl
+                transition
+                group-hover:scale-[1.04]
+                group-hover:-translate-x-3
+                group-hover:translate-y-3
+                group-hover:-rotate-2
+
+                group-even:group-hover:translate-x-3
+                group-even:group-hover:translate-y-3
+                group-even:group-hover:rotate-2
+
+                group-even:right-[initial] group-even:-left-40"
+                />
 
             </section>
 
