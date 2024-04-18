@@ -1,4 +1,7 @@
 import React from 'react';
+import botImage from '@/public/botImage.png';
+import spotify_logo from '@/public/spotify_logo.png'
+import my_portfolio_image from '@/public/my_portfolio_image.png';
 // import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap} from "react-icons/lu";
 // import { FaReact } from 'react-icons/fa';
@@ -26,10 +29,6 @@ export const links = [
         hash: '#experience',
     },
     {
-        name: 'Hobbies',
-        hash: '#hobbies',
-    },
-    {
         name: 'Contact',
         hash: '#contact',
     },
@@ -41,42 +40,48 @@ export const projectsData = [
         title:'DTN Bot',
         description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away accounting documents.',
         tags: ['Python', 'Selenium', 'Shell'],
-        github: 'https://github.com/ericdwkim/dtn-bot'
+        github: 'https://github.com/ericdwkim/dtn-bot',
+        imageUrl: botImage,
     },
 
     {
         title: 'Door Dash Bot',
         description: 'A web-scraping automation bot built for TXB Stores to extract a filtered set of Door Dash delivery orders into a CSV.',
         tags: ['Python', 'Selenium', 'Shell'],
-        github: 'https://github.com/ericdwkim/door_dash_bot'
+        github: 'https://github.com/ericdwkim/door_dash_bot',
+        imageUrl: botImage,
     },
 
     {
         title: 'MS Team Auto Joiner',
         description: 'An automation bot to automatically join Microsoft Teams meetings appearing on your calendar.',
         tags: ['Python', 'Selenium', 'Shell'],
-        github: 'https://github.com/ericdwkim/ms-team-auto-joiner'
-   },
+        github: 'https://github.com/ericdwkim/ms-team-auto-joiner',
+        imageUrl: botImage,
+    },
 
     {
         title: 'Cash Depot Bot',
         description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away CSVs into a shared network filesystem.',
-        tags: ['Java', 'Selenium', 'Shell', 'Gradle', 'shadowJar'],
-        github: 'https://github.com/ericdwkim/cash-depot-bot'
+        tags: ['Java', 'Selenium', 'Shell', 'Gradle', 'ShadowJar'],
+        github: 'https://github.com/ericdwkim/cash-depot-bot',
+        imageUrl: botImage,
     },
 
     {
         title: 'Personal Portfolio',
-        description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn NextJS, TailWindCSS, and React fundamentals',
-        tags: ['TypeScript', 'NextJS', 'TailWindCSS'],
-        github: 'https://github.com/ericdwkim/my-portfolio'
+        description: 'A vertical timeline portfolio website forked from github.com/mikestarrdev used to learn frontend development concepts.',
+        tags: ['TypeScript', 'NextJS', 'TailWindCSS', 'ReactJS'],
+        github: 'https://github.com/ericdwkim/my-portfolio',
+        imageUrl: my_portfolio_image,
     },
 
     {
         title: 'SpotifyMe',
         description: 'A Spotify client clone built as my capstone project at NuCamp.',
-        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'Docker'],
+        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'PyTest','Docker'],
         github: 'https://github.com/ericdwkim/SpotifyMe',
+        imageUrl: spotify_logo,
     }
 ]
 

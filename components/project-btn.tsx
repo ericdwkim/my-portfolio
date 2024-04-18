@@ -8,7 +8,7 @@ export const ProjectBtn = () => {
         >
             <div className="flex flex-row items-center">
                 {<AiFillGithub/>}
-                <span className="ml-1">Github</span>
+                <span className="ml-1">Repo</span>
             </div>
 
         </button>

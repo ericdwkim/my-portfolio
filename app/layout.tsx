@@ -10,8 +10,19 @@ import { ThemeContextProvider } from '@/context/theme-context';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Eric Kim | Personal Portfolio",
-  description: "Software developer with interests in distributed systems",
+    title: 'Eric Kim | Personal Portfolio',
+    description: 'Software developer with interests in distributed systems',
+    openGraph: {
+        title: 'Eric Kim | Personal Portfolio',
+        description: 'Software developer with interests in distributed systems',
+        url: 'ericdwkim.io',
+        images: {
+            url: 'https://avatars.githubusercontent.com/u/90213701?s=400&u=4ed7055ace2c909ef3c01d6598a5a0c4f0088605&v=4',
+            alt: 'Eric Kim avatar',
+        },
+        locale: 'en_US',
+        type: 'website',
+    },
 };
 
 export default function RootLayout({
