@@ -81,7 +81,7 @@ export const projectsData = [
     {
         title: 'SpotifyMe',
         description: 'A Spotify client clone built as my capstone project at NuCamp.',
-        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres', 'PyTest','Docker'],
+        tags: ['Python', 'Flask', 'SQLAlchemy', 'Postgres','Docker'],
         github: 'https://github.com/ericdwkim/SpotifyMe',
         imageUrl: spotifyLogo,
     }
