@@ -17,7 +17,7 @@ type ContactFormEmailProps = {
     senderEmail: string;
 };
 
-export const ContactFormEmail = ({
+export const ContactFormEmailTemplate = ({
     message,
     senderEmail,
 }: ContactFormEmailProps) => {
