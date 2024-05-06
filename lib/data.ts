@@ -4,6 +4,7 @@ import spotifyLogo from '@/public/spotifyLogo.png';
 import myPortfolioImage from '@/public/myPortfolioImage.png';
 import doordashLogo from '@/public/doordashLogo.png';
 import msTeamLogo from '@/public/msTeamLogo.png';
+import menuMorpher from '@/public/menu_morpher.png';
 // import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap} from "react-icons/lu";
 // import { FaReact } from 'react-icons/fa';
@@ -38,6 +39,14 @@ export const links = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: 'Menu Morpher',
+        description: 'A Google My Business API Client to download and update Google business menus',
+        tags: ['Python', 'Google-Oauth2', 'Google API Client', 'Google-Auth'],
+        github: 'https://github.com/ericdwkim/menu-morpher',
+        imageUrl: menuMorpher,
+    },
+
     {
         title:'DTN Bot',
         description: 'A web-crawling automation bot built for TXB Stores to filter, pull, and file away accounting documents.',
@@ -85,6 +94,7 @@ export const projectsData = [
         github: 'https://github.com/ericdwkim/SpotifyMe',
         imageUrl: spotifyLogo,
     }
+
 ]
 
 export const experiencesData = [
