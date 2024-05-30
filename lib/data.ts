@@ -99,7 +99,7 @@ export const projectsData = [
 
 export const experiencesData = [
     {
-        title: 'Data Analyst',
+        title: 'Data Engineer',
         company: 'Aramark',
         description:
         'Aramark is an American food and facilities services provider with international operations. ENABLE+ is a set of iOS/Android apps designed to streamline food servicing and inventory management. As part of the ENABLE team, I am the core contributor and maintainer of our stored procedures hosted on SQL Servers. This includes the implementation and data validation phases to reflect any new API updates for a timely production release. ',
