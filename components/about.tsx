@@ -23,7 +23,7 @@ export const About = () => {
             <SectionHeading>About me</SectionHeading>
 
             <p>
-                I'm a data analyst and developer based in Texas with strong interests in distributed systems and decentralization.
+                I'm a data engineer and developer based in Texas with strong interests in distributed systems and decentralization.
                 Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
                 immersed in a book 📖. I'm also an avid chess player, so click <a href="http://chess.com/play/eek_kim">♘</a> if you wish to challenge me.
                 I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!

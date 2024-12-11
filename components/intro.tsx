@@ -60,7 +60,7 @@ export const Intro = () => {
             >
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
                 Howdy! 👋🏼 I'm <span className="font-bold">Eric,</span> an aspiring full-stack architect working as a data
-                analyst and developer. My specialty is data engineering using
+                engineer and developer. My specialty is data engineering using
                 <span className="font-bold"> Python, SQL, and Bash. </span> I am always eager to explore unfamiliar,
                 challenging domains and have an insatiable appetite to learn!
                 <br/>

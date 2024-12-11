@@ -99,7 +99,7 @@ export const projectsData = [
 
 export const experiencesData = [
     {
-        title: 'Data Analyst',
+        title: 'Data Engineer',
         company: 'Aramark',
         description:
         'Aramark is an American food and facilities services provider with international operations. ENABLE+ is a set of iOS/Android apps designed to streamline food servicing and inventory management. As part of the ENABLE team, I am the core contributor and maintainer of our stored procedures hosted on SQL Servers. This includes the implementation and data validation phases to reflect any new API updates for a timely production release. ',
@@ -120,7 +120,7 @@ export const experiencesData = [
         description:
         'TXB is a chain of convenience stores and gas stations with more than 48 locations operating in Texas and Oklahoma. I spearheaded the development and maintenance of an automation suite using Python, Selenium, and bash scripts. On a weekly basis, I was responsible for creating interactive KPI reports to incite business actions. Analyzing the data to help identify and pinpoint key business drivers was my speciality.',
         icon: React.createElement(BsPersonWorkspace),
-        date: 'Dec 2021 - Feb 2022'
+        date: 'Sep 2021 - Dec 2022'
     },
     {
         title: 'Jr. Software Engineer',
