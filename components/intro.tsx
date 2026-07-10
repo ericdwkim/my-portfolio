@@ -59,52 +59,62 @@ export const Intro = () => {
                 animate={{ opacity: 1, y: 0 }}
             >
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                Howdy! 👋🏼 I'm <span className="font-bold">Eric,</span> an aspiring full-stack architect working as a data
-                engineer and developer. My specialty is data engineering using
+                Howdy! 👋🏼 I'm <span className="font-bold">Eric,</span> a <span className="font-bold">backend & cloud engineer</span> building
+                APIs, data pipelines, and the wiring between them with
                 {/* eslint-disable-next-line react/no-unescaped-entities */}
-                <span className="font-bold"> Python, SQL, and Bash. </span> I'm always eager on exploring new, challenging domains and have an insatiable appetite to learn!
-                <br/>
-                <br/>
-                ⬇️ Curious about my journey? ⬇️
-
-
+                <span className="font-bold"> .NET, Azure, and SQL Server. </span> I chase root causes and leave things better than I found them — systems over snippets. Right now I'm going deeper on <span className="font-bold">distributed systems and cloud architecture</span> on the road to systems engineering.
             </motion.h1>
 
             <motion.div
-                className="flex flex-col items-center justify-center gap-2 px-4 text-lg"
+                className="flex flex-col sm:flex-row items-center justify-center gap-3 px-4 text-lg"
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
                     delay: 0.1,
                 }}
             >
-                <div>
-                    <button>
-                        <a
-                            className="flex items-center my-1.5 px-7 py-3 group bg-white  gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-                            href="/KimEric_Resume.pdf"
-                            download
-                        >
-                            Download Resume{' '}
-                            <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
-                        </a>
-                    </button>
-                    <button>
-                        <Link
-                            href="#contact"
-                            className={`group bg-gray-900 text-white px-7 py-3 mb-2 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition
-              dark:border dark:border-1 dark:border-white/10`}
-                            onClick={() => {
-                                setActiveSection('Contact');
-                                setTimeOfLastClick(Date.now());
-                            }}
-                        >
-                            Contact me here{' '}
-                            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
-                        </Link>
-                    </button>
-                </div>
+                <a
+                    className="group flex items-center gap-2 px-7 py-3 bg-white rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+                    href="/KimEric_Resume.pdf"
+                    download
+                >
+                    Download Resume{' '}
+                    <HiDownload className="opacity-60 group-hover:translate-y-1 transition"/>
+                </a>
+                <Link
+                    href="#contact"
+                    className="group flex items-center gap-2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white px-7 py-3 rounded-full outline-none focus:scale-110 hover:scale-110 hover:from-indigo-700 hover:to-violet-700 active:scale-105 transition dark:border dark:border-white/10"
+                    onClick={() => {
+                        setActiveSection('Contact');
+                        setTimeOfLastClick(Date.now());
+                    }}
+                >
+                    Contact me here{' '}
+                    <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition"/>
+                </Link>
             </motion.div>
+
+            <motion.a
+                href="#about"
+                className="mt-14 inline-flex flex-col items-center gap-2 text-gray-500 dark:text-white/50 hover:text-gray-700 dark:hover:text-white/80 transition-colors"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.7 }}
+                onClick={() => {
+                    setActiveSection('About');
+                    setTimeOfLastClick(Date.now());
+                }}
+                aria-label="Scroll down to read more"
+            >
+                <span className="text-xs uppercase tracking-[0.2em]">Scroll to explore</span>
+                <div className="flex h-10 w-6 items-start justify-center rounded-full border-2 border-current p-1.5">
+                    <motion.div
+                        className="h-1.5 w-1.5 rounded-full bg-current"
+                        animate={{ y: [0, 10, 0], opacity: [1, 0.3, 1] }}
+                        transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}
+                    />
+                </div>
+            </motion.a>
         </section>
     );
 }

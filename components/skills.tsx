@@ -34,7 +34,7 @@ export const Skills = () => {
             <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                 {skillsData.map((skill, index) => (
                     <motion.li
-                        className="bg-white border-black rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+                        className="flex items-center gap-2 bg-white borderBlack rounded-xl px-5 py-3 transition hover:border-indigo-400 hover:-translate-y-1 dark:bg-white/10 dark:text-white/80"
                         key={index}
                         variants={fadeInAnimationVariants}
                         initial="initial"
@@ -44,7 +44,8 @@ export const Skills = () => {
                         }}
                         custom={index}
                     >
-                        {skill}
+                        <span className="text-xl text-indigo-500 dark:text-indigo-400">{skill.icon}</span>
+                        {skill.name}
                     </motion.li>
                 ))}
             </ul>
@@ -53,9 +54,13 @@ export const Skills = () => {
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5}}
+                className="w-full overflow-x-auto flex justify-center"
             >
                 <GitHubCalendar
                     username="ericdwkim"
+                    blockSize={11}
+                    blockMargin={3}
+                    fontSize={14}
                 />
             </motion.section>
         </section>

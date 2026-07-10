@@ -5,11 +5,18 @@ import React from 'react';
 import { SectionHeading } from "@/components/section-heading";
 import { motion } from 'framer-motion';
 import { useSectionInView } from "@/lib/hooks";
+import { currentlyReadingData, hobbiesData } from "@/lib/data";
+import { Carousel } from "@/components/carousel";
 import { BsLinkedin, BsTwitterX } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
 
 export const About = () => {
     const { ref } = useSectionInView('About');
+
+    const bookSlides = currentlyReadingData.map((book) => ({
+        src: book.cover,
+        caption: `${book.title} · ${book.author}`,
+    }));
 
     return (
         <motion.section
@@ -23,10 +30,10 @@ export const About = () => {
             <SectionHeading>About me</SectionHeading>
 
             <p>
-                I'm a data engineer and developer based in Texas with strong interests in distributed systems and decentralization.
-                Outside of work, you can find me rock climbing 🧗, training Brazilian jiu-jitsu 🥋, or
-                immersed in a book 📖. I'm also an avid chess player, so click <a href="http://chess.com/play/eek_kim">♘</a> if you wish to challenge me.
-                I have aspirations on becoming a full-stack software architect, so please connect to follow me on my journey!
+                I'm a <span className="font-medium">backend &amp; cloud engineer</span> based in Texas with a deep
+                interest in <span className="font-medium">distributed systems and cloud architecture</span>. I chase
+                root causes, care about the wiring between services, and I'm always working toward the next level of the
+                stack. Connect with me and follow along on my journey!
             </p>
             <br/>
             <motion.div
@@ -70,6 +77,22 @@ export const About = () => {
                 </div>
 
             </motion.div>
+
+            <div className="mt-12 text-left">
+                <div className="rounded-2xl borderBlack bg-white/60 p-5 sm:p-6 dark:bg-white/5">
+                    <h3 className="text-xl font-semibold mb-4">Hobbies</h3>
+                    <Carousel slides={hobbiesData} />
+                    <p className="mt-4 text-sm text-gray-600 dark:text-white/60">
+                        Also an avid chess player — click{' '}
+                        <a className="underline" href="http://chess.com/play/eek_kim">♘</a> to challenge me.
+                    </p>
+                </div>
+
+                <div className="mt-6 rounded-2xl borderBlack bg-white/60 p-5 sm:p-6 dark:bg-white/5">
+                    <h3 className="text-xl font-semibold mb-4">Currently reading 📚</h3>
+                    <Carousel slides={bookSlides} />
+                </div>
+            </div>
 
 
         </motion.section>

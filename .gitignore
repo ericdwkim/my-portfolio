@@ -45,3 +45,5 @@ dev/
 qodana.yaml
 
 .env
+# personal scratch notes
+scratch_1.txt

@@ -5,16 +5,18 @@ import { projectsData } from "@/lib/data";
 import Image from 'next/image';
 import { motion } from "framer-motion";
 import Link from 'next/link';
+import { BsBoxArrowUpRight } from 'react-icons/bs';
 import { ProjectBtn } from './project-btn';
 
-type ProjectProps = (typeof projectsData)[number];
+type ProjectProps = (typeof projectsData)[number] & { liveUrl?: string };
 
 export const Project = ({
     title,
     description,
     github,
     tags,
-    imageUrl
+    imageUrl,
+    liveUrl,
 }: ProjectProps) => {
     const ref = useRef<HTMLDivElement>(null)
 
@@ -41,16 +43,26 @@ export const Project = ({
                         {description}
                     </p>
                     <br/>
-                    <div>
-                        <a href={github} target="_">
+                    <div className="flex flex-wrap gap-2">
+                        <a href={github} target="_blank" rel="noopener noreferrer">
                             <ProjectBtn/>
                         </a>
+                        {liveUrl && (
+                            <a href={liveUrl} target="_blank" rel="noopener noreferrer">
+                                <button className="flex items-center justify-center px-4 py-2 bg-gradient-to-r from-indigo-600 to-violet-600 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:from-indigo-700 hover:to-violet-700 active:scale-105">
+                                    <div className="flex flex-row items-center">
+                                        <BsBoxArrowUpRight/>
+                                        <span className="ml-1.5">Live Site</span>
+                                    </div>
+                                </button>
+                            </a>
+                        )}
                     </div>
 
                     <ul className="flex flex-wrap mt-4 gap-2 sm:mt-4">
                         {tags.map((tag, index) => (
                             <li
-                                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
+                                className="bg-indigo-600/90 px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:bg-indigo-500/70 dark:text-white/90"
                                 key={index}>
                                 {tag}
                             </li>

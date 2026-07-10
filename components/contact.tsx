@@ -34,8 +34,8 @@ export const Contact = () => {
             <SectionHeading>Contact me</SectionHeading>
             <p className="text-gray-700 -mt-6 dark:text-white/80">
                 Please contact me directly at {''}
-                <a className="text-blue-600 underline italic" href="mailto:hello@ericdwkim.io">
-                    hello@ericdwkim.io
+                <a className="text-indigo-600 dark:text-indigo-400 underline italic" href="mailto:ericdwkim.io@gmail.com">
+                    ericdwkim.io@gmail.com
                 </a> {''}
                 or through this form.
             </p>

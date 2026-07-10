@@ -1,41 +1,71 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Eric Kim — Personal Portfolio
+
+The source for [ericdwkim.io](https://ericdwkim.io) — a personal portfolio for Eric Kim, a
+backend &amp; cloud engineer. Single-page site with an animated intro, experience timeline,
+projects, skills, and an about section featuring photo and reading carousels.
+
+## Features
+
+- Responsive single-page layout with smooth scroll and active-section tracking
+- Animated intro, section reveals, and a scroll cue (Framer Motion)
+- Experience timeline with company logos and grouped roles per employer
+- Projects with repository and live-site links
+- Skills grid with technology icons and a GitHub contributions calendar
+- About section with a **hobbies photo carousel** and a **"currently reading" book carousel**
+- Contact form backed by a server action (Resend + React Email)
+
+## Tech Stack
+
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS
+- **Animation:** Framer Motion
+- **Icons:** react-icons
+- **Email:** Resend + React Email
+- **Deploy:** Vercel
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site. Pages hot-reload as you edit.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+To send email from the contact form locally, set `RESEND_API_KEY` in `.env`.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Project Structure
 
-## Learn More
+```
+app/          App Router entry — layout, page, global styles
+components/    UI components (intro, about, experience, projects, skills,
+              contact, carousel, header, theme-switch, ...)
+context/       Theme and active-section providers
+lib/data.ts    Site content — links, projects, experiences, skills,
+              currently-reading books, and hobbies
+actions/       Server actions (sendEmail)
+public/        Static assets — logos, book covers, hobby photos, resume
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Editing Content
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Most content lives in **`lib/data.ts`** — update projects, experiences, skills, the
+currently-reading list, and hobby photos there. Images referenced by that file live under
+`public/` (`public/logos`, `public/books`, `public/hobbies`).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Deploy
 
-## Deploy on Vercel
+Deployed on [Vercel](https://vercel.com). Pushing to `main` triggers a production deploy.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Acknowledgments
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+This project began as a fork of [github.com/mikestarrdev](https://github.com/mikestarrdev)'s
+portfolio, which provided the original foundation. It has since been substantially customized —
+content, styling, components, and features.
 
-# my-portfolio
+---
 
-TODO
-1. dark mode
+## Roadmap
+
+- [ ] Revisit the light/dark theme toggle (currently disabled)
